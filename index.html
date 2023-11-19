@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Frontend Mentor challenge">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Rebecca Padgett">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <!-- !google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- !css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- !JavaScript -->
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <main class="faq">
+    <h1 class="visually-hidden">FAQ Accordion Card</h1>
+    <img class="faq__banner-box" src="./assets/images/illustration-box-desktop.svg" width="191" height="184" alt=""
+      aria-hidden="true">
+    <div class="faq__banner-images">
+      <picture>
+        <source media="(min-width:62em)" srcset="./assets/images/illustration-woman-online-desktop.svg">
+        <img class="illustration-woman" src="./assets/images/illustration-woman-online-mobile.svg" width="245"
+          height="186" alt="" aria-hidden="true">
+      </picture>
+    </div>
+    <article class="accordion__container">
+      <h2 class="accordion__title">faq</h2>
+      <div class="accordion__list" id="accordion-1" aria-label="accordion control button group">
+        <div class="accordion__item">
+          <h3 class="accordion__header">
+            <button class="accordion__btn">
+              How many team members can I invite?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <h3 class="accordion__header">
+            <button class="accordion__btn">
+              What is the maximum file upload size?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <h3 class="accordion__header">
+            <button class="accordion__btn">
+              How do I reset my password?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <h3 class="accordion__header">
+            <button class="accordion__btn">
+              Can I cancel my subscription?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              Yes! Send us a message and we'll process your request no questions asked.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <h3 class="accordion__header">
+            <button class="accordion__btn">
+              Do you provide additional support?
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p class="accordion__answer">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Rebecca Padgett</a>.
+  </footer>
+</body>
+
+</html>
