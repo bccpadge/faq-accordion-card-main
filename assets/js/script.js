@@ -110,7 +110,7 @@ class Accordion {
       btn.insertAdjacentHTML(
         "beforeend",
         `
-        <svg width="10" height="7" class="accordion__icon" aria-hidden"true" focusable="false" aria-label="click here to see the answer" xmlns="http://www.w3.org/2000/svg">
+        <svg width="10" height="7" class="accordion__icon" aria-hidden="true" focusable="false" aria-label="click here to see the answer" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/>
         </svg>
       `
@@ -129,8 +129,6 @@ class Accordion {
       if (!e.target.classList.contains("accordion__btn")) return;
       const isExpanded = e.target.getAttribute("aria-expanded") == "true";
       const index = this.buttons.findIndex((btn) => btn.id === e.target.id);
-
-      // todo options for one panel only
 
       if (isExpanded) {
         e.target.setAttribute("aria-expanded", "false");
