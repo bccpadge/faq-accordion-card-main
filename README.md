@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github Pages]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-using-html-css-and-js-DSGW7CVYdR)
+- Live Site URL: [Github Pages](https://bccpadge.github.io/faq-accordion-card-main/)
 
 ## My process
 
