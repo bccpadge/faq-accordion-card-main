@@ -2,89 +2,91 @@
   document.body.insertAdjacentHTML(
     "beforeend",
     `
-   <style>
-    .accordion__list{
-      display:grid;
-      gap: 1.7rem;
-      padding-block-start: 3rem;
-    }
+    <div>
+        <style>
+        .accordion__list{
+          display:grid;
+          gap: 1.7rem;
+          padding-block-start: 3rem;
+        }
 
- 
-    .accordion__item{
-      border-bottom: 1px solid hsl(var(--clr-neutral-divider));
-      padding-block-end: 0.625rem;
-    }
-
-    .accordion__btn{
-      font-size: 0.8125rem;
-      font-weight: 400;
-      color: hsl(var(--clr-neutral-blue));
-      display:flex;
-      gap: 1rem;
-      justify-content: space-between;
-      align-items:center;
-      width: 100%;
-      cursor: pointer;
-     
-    }
-
-    @keyframes slide{
-      0% {
-        opacity: 0;
-        transform: translateX(-9px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
     
+        .accordion__item{
+          border-bottom: 1px solid hsl(var(--clr-neutral-divider));
+          padding-block-end: 0.625rem;
+        }
 
-    [aria-expanded="true"].accordion__btn{
-      font-weight: 700;
-      color: hsl(var(--clr-primary-blue));
-      margin-block-end: 0.9375rem;
-      animation: slide 0.4s ease-in-out;
-    }
+        .accordion__btn{
+          font-size: 0.8125rem;
+          font-weight: 400;
+          color: hsl(var(--clr-neutral-blue));
+          display:flex;
+          gap: 1rem;
+          justify-content: space-between;
+          align-items:center;
+          width: 100%;
+          cursor: pointer;
+        
+        }
 
-    .accordion__btn:is(:hover,:focus-visible){
-      color: hsl(var(--clr-primary-red));
-    }
+        @keyframes slide{
+          0% {
+            opacity: 0;
+            transform: translateX(-9px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
 
-    .accordion__icon{
-      pointer-events: none;
-      transition: 180ms cubic-bezier(.09,.26,.75,.44) ease;
-    }
+        [aria-expanded="true"].accordion__btn{
+          font-weight: 700;
+          color: hsl(var(--clr-primary-blue));
+          margin-block-end: 0.9375rem;
+          animation: slide 0.4s ease-in-out;
+        }
 
-    [aria-expanded="true"] .accordion__icon{
-      transform: rotate(180deg);
-      transition: 180ms cubic-bezier(.09,.26,.75,.44) ease;
-    }
+        .accordion__btn:is(:hover,:focus-visible){
+          color: hsl(var(--clr-primary-red));
+        }
+
+        .accordion__icon{
+          pointer-events: none;
+          transition: 180ms cubic-bezier(.09,.26,.75,.44) ease;
+        }
+
+        [aria-expanded="true"] .accordion__icon{
+          transform: rotate(180deg);
+          transition: 180ms cubic-bezier(.09,.26,.75,.44) ease;
+        }
 
 
-    @keyframes active {
-      0% {
-        opacity: 0;
-        transform: translateX(-5px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
+        @keyframes active {
+          0% {
+            opacity: 0;
+            transform: translateX(-5px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
 
-    .accordion__answer{
-      color: hsl(var( --clr-neutral-dark-blue));
-      line-height: 1.4;
-      overflow:hidden;
-    }
+        .accordion__answer{
+          color: hsl(var( --clr-neutral-dark-blue));
+          line-height: 1.4;
+          overflow:hidden;
+        }
 
-    .accordion__panel:not([hidden="true"]){
-      animation: active 0.4s ease-in-out;
-      margin-block-start: 0.9375rem;
-    }
-   </style>
-
+        .accordion__panel:not([hidden="true"]){
+          animation: active 0.4s ease-in-out;
+          margin-block-start: 0.9375rem;
+        }
+      </style>
+    </div>
+   
   
     `
   );
