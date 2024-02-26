@@ -146,7 +146,8 @@ button {
 }
 
 .accordion__container {
-  padding: 4rem 1rem;
+  padding: 4rem 1.3rem;
+  margin-inline: 0.625rem;
 }
 
 .accordion__title {
